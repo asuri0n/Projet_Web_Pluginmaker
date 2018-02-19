@@ -27,7 +27,7 @@
                 <h1 class="wow fadeInUp" data-wow-duration="700ms" data-wow-delay="300ms">Détails sur un <span>plugin</span></h1>
                 <ul class="breadLink wow fadeInUp" data-wow-duration="700ms" data-wow-delay="350ms">
                     <li><a href="accueil">Accueil</a><span>|</span></li>
-                    <li><a href="plugins">Mes plugins</a><span>|</span></li>
+                    <li><a href="plugins">Nos plugins</a><span>|</span></li>
                     <li>Détails</li>
                 </ul>
             </div>

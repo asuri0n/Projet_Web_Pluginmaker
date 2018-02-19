@@ -19,10 +19,10 @@
             <?php if ( isset($_SESSION['Auth']['id'])) {?>
                 <li <?php if ( $page == 'commande' && isset($_SESSION['Auth']['id']) ) echo 'class="active"'; ?>><a href="<?php echo WEBROOT ?>commande"><i style="transform: translateY(-10%)" class="fa fa-shopping-cart" aria-hidden="true"></i> Commande</a></li>
                 <li <?php if ( $page == 'profil' && isset($_SESSION['Auth']['id']) ) echo 'class="active"'; ?>><a href="<?php echo WEBROOT ?>profil"><i style="transform: translateY(-10%)" class="fa fa-user" aria-hidden="true"></i> Profil </a></li>
-                <li <?php if ( $page == 'signout' && isset($_SESSION['Auth']['id']) ) echo 'class="active"'; ?>><a href="<?php echo WEBROOT ?>signout"><i style="transform: translateY(-10%)" class="fa fa-times" aria-hidden="true"></i> Déconnection </a></li>
+                <li <?php if ( $page == 'signout' && isset($_SESSION['Auth']['id']) ) echo 'class="active"'; ?>><a href="<?php echo WEBROOT ?>signout"><i style="transform: translateY(-10%)" class="fa fa-times" aria-hidden="true"></i> Déconnexion </a></li>
             <?php } ?>
             <?php if ( !isset($_SESSION['Auth']['id'])) {?>
-                <li <?php if ( $page == 'login' && !isset($_SESSION['Auth']['id']) ) echo 'class="active"'; ?>><a href="<?php echo WEBROOT ?>login"><i style="transform: translateY(-10%)" class="fa fa-sign-in" aria-hidden="true"></i> Connection </a></li>
+                <li <?php if ( $page == 'login' && !isset($_SESSION['Auth']['id']) ) echo 'class="active"'; ?>><a href="<?php echo WEBROOT ?>login"><i style="transform: translateY(-10%)" class="fa fa-sign-in" aria-hidden="true"></i> Connexion </a></li>
                 <li <?php if ( $page == 'signin' && !isset($_SESSION['Auth']['id']) ) echo 'class="active"'; ?>><a href="<?php echo WEBROOT ?>signin"><i style="transform: translateY(-10%)" class="fa fa-user-plus" aria-hidden="true"></i> Inscription </a></li>
             <?php } ?>
         </ul>

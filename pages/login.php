@@ -6,6 +6,7 @@
         if ( isset($_POST['password']) && isset($_POST['email']) ) {
             if (login($_POST['email'], $_POST['password'])) {
                 echo "<script>toast('message', 'success', 'Ok', 5000)</script>";
+                header("Location: profil");
             } else {
                 echo "<script>toast('".$_SESSION['error']."', 'error', 'Erreur', 5000);</script>";
             }
@@ -19,7 +20,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-sm-12 col-xs-12 text-center">
-                <h1 class="wow fadeInUp" data-wow-duration="700ms" data-wow-delay="300ms">Connection</h1>
+                <h1 class="wow fadeInUp" data-wow-duration="700ms" data-wow-delay="300ms">Connexion</h1>
             </div>
         </div>
     </div>

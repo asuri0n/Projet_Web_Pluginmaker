@@ -1,6 +1,8 @@
 <?php
-    $page = "contact";
-    $title = "Contactez-moi.";
+    if ( !isset($_SESSION['Auth']['id'])) { header("Location: accueil"); }
+
+    $page = "commande";
+    $title = "Commandez un plugin.";
 ?>
 
 <section class="breadCrumArea">

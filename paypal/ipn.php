@@ -32,6 +32,10 @@ $log_file_dir = __DIR__ . "/logs";
 // Here is some information on how to configure sendmail:
 // http://php.net/manual/en/function.mail.php#118210
 
+$subq = "INSERT INTO logs_commandes (log_comment, log_date) VALUES ('erreur paypal ipn', now())";
+$sthsubq = $pdo->prepare($subq);
+$sthsubq->execute();
+
 require('PaypalIPN.php');
 $ipn = new PaypalIPN();
 if ($enable_sandbox) {
