@@ -119,7 +119,7 @@
     font-weight: 400;
     text-transform: uppercase;
     border-right: 1px solid #f2f2f2;
-    padding: 3px 35px;
+    padding: 3px 10px;
 }
 .mainMenu > ul > li:last-child > a{
     border-right: 0;
